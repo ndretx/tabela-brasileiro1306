@@ -32,8 +32,8 @@ export default function App() {
             id: teams['time']['time_id'],
             team_position: teams['posicao'],
             team_shield_url: teams['time']['escudo'],
-            team_name: teams['time']['nome'],
-            team_points: teams['pontos ']
+            team_name: teams['time']['nome_popular'],
+            team_points: teams['pontos']
           };
           teamsPosition.push(dataTeam);
         });
@@ -53,10 +53,10 @@ export default function App() {
           renderItem={(teams) =>
             <View style={styles.item}>
               <Image  style={styles.teamShield} source={{ uri: teams.item.team_shield_url }} />
-              <Text style={styles.team_position}>{teams.item.team_name}</Text>
-              <Text style={styles.team_position}>{teams.item.team_name}</Text>
-              <Text style={styles.team_position}>{teams.item.team_points}</Text>
-            </View>
+              <Text style={styles.teamDetails}>{teams.item.team_position}</Text>
+              <Text style={styles.teamName}>{teams.item.team_name}</Text>
+              <Text style={styles.teamPoints}>{teams.item.team_points}</Text>
+            </View> 
           }
         />
       </View>
@@ -72,34 +72,44 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     marginVertical: 10,
   },
-  table:{
+  table: {
     backgroundColor: 'gray',
     marginHorizontal: 10,
     marginVertical: 10,
   },
-  item:{
+  item: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 5,
+    paddingHorizontal: 10,
+  },
+  teamShield: {
+    width: 20,
+    height: 20,
+    marginRight: 10,
+  },
+  teamDetails: {
+    marginRight: 10,
+    alignItems: 'center',
+  },
+  teamName: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'left',
+  },
+  teamPoints: {
+    justifyContent: 'flex-end',
+    fontSize: 16,
+    fontWeight: 'bold',
     
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
-
   },
-  teamShield: {
-    width: 20,
-    height: 20,
-    
-
-  },
-  team_position: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: 'white'
-
   },
  
-});
+);
 
 
