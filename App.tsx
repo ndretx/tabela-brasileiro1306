@@ -73,13 +73,12 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   table: {
-    backgroundColor: 'gray',
+    backgroundColor: '#D3D3D3',
     marginHorizontal: 10,
     marginVertical: 10,
   },
   item: {
     flexDirection: 'row',
-    alignItems: 'center',
     marginVertical: 5,
     paddingHorizontal: 10,
   },
@@ -89,18 +88,23 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   teamDetails: {
-    marginRight: 10,
-    alignItems: 'center',
+    marginHorizontal: 10,
+    
   },
   teamName: {
     fontSize: 16,
     fontWeight: 'bold',
-    textAlign: 'left',
+    justifyContent: 'center',
+    marginHorizontal : 40
+    
   },
   teamPoints: {
-    justifyContent: 'flex-end',
-    fontSize: 16,
+   position: 'absolute',
+   right: 0,
+   marginHorizontal: 20,
+   fontSize: 16,
     fontWeight: 'bold',
+    textAlign: 'center',
     
   },
   title: {
