@@ -42,7 +42,7 @@ export default function TabelaDetails() {
   }, []);
 
   const navigateToTeamInfo = (team: TeamEntity) => {
-    navigation.navigate("Detalhes",{team});
+    navigation.navigate<any>("Detalhes",{team});
   };
 
   return (
