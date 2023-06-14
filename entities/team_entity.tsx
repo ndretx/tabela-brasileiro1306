@@ -4,5 +4,7 @@ export default class TeamEntity {
     team_name: string;
     team_position: number;
     team_points: number;
-
+    team_goals: number;
+    team_against:  number;
+    team_goalDiference:  number;
 }
