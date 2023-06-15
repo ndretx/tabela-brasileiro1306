@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { RouteProp, useRoute } from '@react-navigation/native';
-import TeamEntity from './entities/team_entity';
+import TeamEntity from '../../entities/team_entity';
 import { Image } from 'expo-image';
 
 type TeamDetailsRouteProp = RouteProp<{ Detalhes: { team: TeamEntity } }, 'Detalhes'>;

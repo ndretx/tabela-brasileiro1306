@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableHighlight} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import TeamEntity from './entities/team_entity';
+import TeamEntity from '../../entities/team_entity';
 import { Image } from 'expo-image';
 
 

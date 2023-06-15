@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer, } from '@react-navigation/native';
-import TabelaDetails from './tabela-details';
-import TeamInfo from './team-info';
+import TabelaDetails from './src/pages/tabela-details';
+import TeamInfo from './src/pages/team-info';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
